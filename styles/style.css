@@ -1,7 +1,6 @@
 .body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-attachment: fixed;
-    background-size: cover;
+    margin: 1px;
 }
 /*para poner texto de blanco*/
 .blanco{ color: white;}
@@ -13,6 +12,7 @@
     grid-template-areas: "header"
                           "productos"
                           "footer";
+    margin: 0px;                      
 }
 
 .border{
@@ -23,7 +23,7 @@
 
 .header{
     padding: 2rem 1.4rem;
-    background-color:rgb(113,208,218);
+    background-color: rgb(113,208,218);
     grid-area: header;
     display: flex;
     justify-content: space-between;
@@ -46,12 +46,39 @@ td{color: white;}
 p{color: white;
 }
 
+.slide-fwd-center {
+	-webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 .shadow-drop-2-center {
 	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
- @-webkit-keyframes shadow-drop-2-center {
+/*animacion sale para adelante*/
+ @-webkit-keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+  @keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+/*sombra a los costados*/
+ @-webkit-keyframes shadow-drop-2-center{
     0% {
       -webkit-transform: translateZ(0);
               transform: translateZ(0);
@@ -118,14 +145,23 @@ p{color: white;
     flex-direction: column;
     
 }
-/*tamaño de las logos*/
+/*logos*/
+.logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
 .logoWhatsapp{
     width: 55px;
 }
 
 .logoWhatsappBox{
     display: flex;
-    justify-content: end;}
+    justify-content: end;
+
+}
 
 
 .logoIg{
