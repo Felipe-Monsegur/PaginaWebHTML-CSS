@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGMtecno</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="titulo">AGMtecno</h1>
+            <ul class="totalBarraNavegacion">
+                <li class="barraNavegacion"> <a class="barraNavegacion" href="../index.html"></a> - Inicio</li>
+                <li class="barraNavegacion">  <a class="barraNavegacion" href="./productos.html">- Celulares</a></li>
+                <li class="barraNavegacion"> <a class="barraNavegacion"  href="./productos2.html">- Computadoras</a></li>
+                <li class="barraNavegacion"> <a class="barraNavegacion" href="./productos-indiv.html">- Pedidos especiales</a></li>
+                <li class="barraNavegacion"> <a class="barraNavegacion" href="./contactos.html">- Contacto -</a></li>
+            </ul>
+    </header>
+    <main class="mainFondo">
+        <section><p>- Si usted tiene algun inconveniente le pido que llene este formulario y nosotros nos contactaremos con usted lo antes posible</p>
+        <fieldset>
+        <legend class="blanco" >Informacion Personal</legend>
+        <form action="" method="get" enctype="text/plain">
+            <p >Nombre:</p>
+            <label for="username"></label>
+            <input type="text" name="username" id="username" value="Nombre" required>
+        </form>
+        <form action="" method="get" enctype="text/plain">
+            <p >Apellido:</p>
+            <label for="userlastname"></label>
+            <input type="text" name="userlastname" id="userlastname" value="Apellido" required>
+        </form> 
+        <form action="" method="get" enctype="text/plain">
+            <p>Numero:</p>
+            <label for="usernumber"></label>
+            <input type="text" name="usernumber" id="usernumber" value="Numero" required>
+        </form>
+        <form action="" method="get" enctype="text/plain">
+            <p>Correo Electronico:</p>
+            <label for="usermail"></label>
+            <input type="email" name="usermail" id="usermail" value="Mail" required>
+        </form>
+
+        <form action="" method="get" enctype="text/plain"></form>
+            <label class="blanco" for="userProblema">Su problema:</label>
+            <select name="problema" id="userProblem" required>
+                 <option value="Nollega">No llego el pedido</option>
+                 <option value="Nofunciona">No fuunciona el producto</option>
+                 <option value="NoContento">No estoy contento con el producto</option>
+            </select>
+        </form>
+            <input class="botonEnviar" type="submite" value="ENVIAR">
+        </fieldset>
+        </section>
+        <div><p>- Le pedimos disculpas y agradecemos la paciencia</p></div>
+    </main>
+    <footer class="footer">
+        <div>- aibdausgu@gmail.mom</div>
+        <div>- number:51 0000 0000</div>
+        <div><a href="https://www.instagram.com/agmtecno/"><img class="logoIg" src="../img/logo de Ig.png" alt="logo de instagram"></a></div>
+        <div><img class="logoWhatsapp" src="../img/logo-wasap-WhatsApp.png" alt="logo de whatsapp"></div>
+    </footer>
+</body>
+</html>
