@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +11,27 @@
 <body>
     <header class="header">
         <h1 class="titulo">AGMtecno</h1>
-            <ul class="totalBarraNavegacion">
-                <li class="barraNavegacion"> <a class="barraNavegacion" href="../index.html"></a> - Inicio</li>
-                <li class="barraNavegacion">  <a class="barraNavegacion" href="./productos.html">- Celulares</a></li>
-                <li class="barraNavegacion"> <a class="barraNavegacion"  href="./productos2.html">- Computadoras</a></li>
-                <li class="barraNavegacion"> <a class="barraNavegacion" href="./productos-indiv.html">- Pedidos especiales</a></li>
-                <li class="barraNavegacion"> <a class="barraNavegacion" href="./contactos.html">- Contacto -</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active barraNavegacion" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link active barraNavegacion" href="./productos.html">Celulares</a>
+                    <a class="nav-link active barraNavegacion" href="./productos2.html">Computadoras</a>
+                    <a class="nav-link active barraNavegacion" href="./productos-indiv.html">Pedidos especiales</a>
+                    <a class="nav-link active barraNavegacion" href="./contactos.html">Contacto</a>
+                 </div>
+              </div>
+            </div>
+       </nav>
     </header>
     <main class="mainFondo">
-        <section><p>- Si usted tiene algun inconveniente le pido que llene este formulario y nosotros nos contactaremos con usted lo antes posible</p>
+        <p>- Si usted tiene algun inconveniente le pido que llene este formulario y nosotros nos contactaremos con usted lo antes posible</p>s
+    <section class="hero__info">
         <fieldset>
         <legend class="blanco" >Informacion Personal</legend>
         <form action="" method="get" enctype="text/plain">
@@ -51,16 +63,17 @@
                  <option value="NoContento">No estoy contento con el producto</option>
             </select>
         </form>
-            <input class="botonEnviar" type="submite" value="ENVIAR">
-        </fieldset>
-        </section>
+    </fieldset>
+        <button class="btn btn-outline-success me-2 botonEnviar" type="button" value="Enviar">Enviar</button>
+     </section>
         <div><p>- Le pedimos disculpas y agradecemos la paciencia</p></div>
     </main>
     <footer class="footer">
         <div>- aibdausgu@gmail.mom</div>
         <div>- number:51 0000 0000</div>
-        <div><a href="https://www.instagram.com/agmtecno/"><img class="logoIg" src="../img/logo de Ig.png" alt="logo de instagram"></a></div>
-        <div><img class="logoWhatsapp" src="../img/logo-wasap-WhatsApp.png" alt="logo de whatsapp"></div>
+        <div class="logoIgBox"><a href="https://www.instagram.com/agmtecno/"><img class="logoIg" src="../img/logo de Ig.png" alt="logo de instagram"></a></div>
+        <div class="logoWhatsappBox"><img class="logoWhatsapp" src="../img/logo-wasap-WhatsApp.png" alt="logo de whatsapp"></div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
