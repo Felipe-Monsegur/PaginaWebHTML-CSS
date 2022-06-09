@@ -171,18 +171,12 @@ p{color: white;
 
 }
 
-.logoGmail{
+.logo{
     width: 55px;
 
 }
 
-.logoWhatsapp{
-    width: 55px;
-}
 
-.logoIg{
-    width: 55px;
-}
 
 
 /*recordatorio no poner el media queries arriba de esto*/
