@@ -1,0 +1,252 @@
+.body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 1px;
+
+}
+/*para poner texto de blanco*/
+.blanco{ color: white;}
+
+
+.botonEnviar, .botonEnviar--aceptar{
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.botonEnviar--aceptar{
+    background-color: green;
+}
+
+.separacion{padding: 5px;
+
+}
+
+#grilla{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% auto 20%;
+    grid-template-areas: "header"
+                          "productos"
+                          "footer";
+    margin: 0px;                      
+}
+.hero__info{
+    grid-area: productos;
+    display: flex;
+    border: 0px;
+}
+
+
+.hero{
+        grid-area: productos;
+        display: flex;
+        justify-content: space-evenly;
+        border: 0px;
+    }
+
+.header{
+    font-family: Impact, sans-serif;
+    padding: 2rem 1.4rem;
+    background: rgb(44,212,217);
+    background: radial-gradient(circle, rgba(44,212,217,1) 0%, rgba(83,51,237,1) 91%, rgba(83,51,237,1) 100%);
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+}
+/*para que todas las paginas tengan el mismo fondo en el main*/
+.mainFondo{
+    background-color: rgb(190, 227, 248);
+    background-size: cover;
+    padding: 70px 70px 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0px;
+}
+/*esto es para que los textos de las tablas se vean blancos*/
+
+th{color: white;
+}
+td{color: white;}
+
+/*para poner texto de parafo blanco*/
+p{color: white;
+}
+
+.botonImg{
+    display: block;
+    height: 100%;
+}
+
+.imgCelular{
+    width: 320px;
+    width: 320px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 10%;
+    background-size: 100% auto;
+}
+
+
+.slide-fwd-center {
+	-webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.shadow-drop-2-center {
+	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/*animacion sale para adelante*/
+ @-webkit-keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+  @keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+/*sombra a los costados*/
+ @-webkit-keyframes shadow-drop-2-center{
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+  @keyframes shadow-drop-2-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px);
+              transform: translateZ(50px);
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+  
+
+/*tamaño de las img*/
+#celularImg{
+    width: 300px;
+}
+
+#laptopImg {
+    width: 320px;
+}
+
+#pcImg{
+    width: 309px;
+}
+
+.footer{
+    background: rgb(44,212,217);
+    background: radial-gradient(circle, rgba(44,212,217,1) 0%, rgba(83,51,237,1) 91%, rgba(83,51,237,1) 100%);
+    grid-area: footer;
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+}
+
+/*logos*/
+.logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+
+
+}
+
+.logosTamaño{
+    width: 55px;
+
+}
+
+
+
+
+/*recordatorio no poner el media queries arriba de esto*/
+
+@media screen and ( max-width:500px ){
+    
+   
+    #grilla{
+        grid-template-columns: 1;
+        grid-template-areas: "header"
+                            "productos"
+                            "footer";
+
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .header{
+        display: flex;
+        justify-content: flex-start;
+        justify-content: space-between;
+    }
+
+    .totalBarraNavegacion{
+        padding-top: 0px;
+        flex-wrap: wrap;
+    }
+
+    .logoIgBox{
+        display: flex;
+        justify-content: end;
+    }
+
+
+    #celularImg{
+        width: 200px;
+    }
+    
+    #laptopImg {
+        width: 200px;
+    }
+    
+    #pcImg{
+        width: 200px;
+    }
+    .logoWhatsappBox{
+        display: flex;
+        justify-content: start;}
+    .logoIgBox{
+            display: flex;
+            justify-content: start;
+        }
+    
+}
+    
