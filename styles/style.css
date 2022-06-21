@@ -64,12 +64,13 @@ p{color: white;
 }
 
 .botonImg{
-    display: block;
-    height: 100%;
+    height:auto;
+    width: 100%;
 }
 
-.imgCelular{
-    width: 320px;
+
+.lol{
+    height: 320px;
     width: 320px;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -78,37 +79,10 @@ p{color: white;
 }
 
 
-.slide-fwd-center {
-	-webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
 .shadow-drop-2-center {
 	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-
-/*animacion sale para adelante*/
- @-webkit-keyframes slide-fwd-center {
-    0% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-    }
-    100% {
-      -webkit-transform: translateZ(160px);
-              transform: translateZ(160px);
-    }
-  }
-  @keyframes slide-fwd-center {
-    0% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-    }
-    100% {
-      -webkit-transform: translateZ(160px);
-              transform: translateZ(160px);
-    }
-  }
 /*sombra a los costados*/
  @-webkit-keyframes shadow-drop-2-center{
     0% {
@@ -140,18 +114,6 @@ p{color: white;
   }
   
 
-/*tamaño de las img*/
-#celularImg{
-    width: 300px;
-}
-
-#laptopImg {
-    width: 320px;
-}
-
-#pcImg{
-    width: 309px;
-}
 
 .footer{
     background: rgb(44,212,217);
@@ -177,12 +139,9 @@ p{color: white;
 
 }
 
-
-
-
 /*recordatorio no poner el media queries arriba de esto*/
 
-@media screen and ( max-width:500px ){
+@media screen and ( max-width:890px ){
     
    
     #grilla{
