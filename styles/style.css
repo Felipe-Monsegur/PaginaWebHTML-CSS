@@ -7,7 +7,6 @@
 .b{ color: white;}
 
 #grilla{
-    height: 100vh;
     display: grid;
     grid-template-areas: "header"
                           "productos"
@@ -15,9 +14,21 @@
     margin: 0px;                      
 }
 
+.header{
+    padding: 15px;
+    font-family: Impact, sans-serif;
+    background: rgb(44,212,217);
+    background: radial-gradient(circle, rgb(44,212,217) 0%, rgba(83,51,237,1) 91%, rgba(83,51,237,1) 100%);
+    grid-area: header;
+}
+
+.logoAGMtecno{
+    padding-bottom: 10px;
+}
+
 .contenedorDesc{
     width: 95%;
-    background: rgba(44, 154, 217, 0.397);
+    background: rgb(44, 125, 217);
     border-radius: 15px;
 }
 
@@ -28,6 +39,7 @@
     text-align: center;
     color: rgb(220, 220, 220);
     font-size: 23px;
+    font-weight: bolder;
 }
 
 .hero{    
@@ -58,11 +70,12 @@
 
 .tituloImg{
     color: rgb(220, 220, 220);
-    background-color: rgb(44, 154, 217);
+    background-color: rgb(44, 125, 217);
     text-align: center;
     font-weight: bolder;
     padding: 5px 0px;
     margin: 0px 0px 50px 0px;
+    border-radius: 0px 0px 15px 15px;
 }
 
 .tituloImgProdPrecio{
@@ -84,13 +97,7 @@
     margin: 0px;
 }
 
-.header{
-    padding: 15px;
-    font-family: Impact, sans-serif;
-    background: rgb(44,212,217);
-    background: radial-gradient(circle, rgba(44,212,217,1) 0%, rgba(83,51,237,1) 91%, rgba(83,51,237,1) 100%);
-    grid-area: header;
-}
+
 
 .titulo{
     font-weight: bolder;
@@ -104,8 +111,8 @@
 
 /*para que todas las paginas tengan el mismo fondo en el main*/
 .mainFondo{
-    padding: 2rem 2rem;
-    background-color: rgb(190, 227, 248);
+    padding: 2rem 1rem;
+    background: linear-gradient(175deg,rgb(44, 125, 217),#110023);
     background-image: url(../img/fondo\ negro\ cuadro.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
@@ -238,7 +245,11 @@ p{color: white;
 
 h4{color: white;}
 
-.botonImg{
+.BotonImg{
+    border-radius: 15px 15px 0px 0px;
+}
+
+.ContenedorbotonImg{
     height:auto;
     width: 100%;
     padding: 0px;
@@ -246,8 +257,7 @@ h4{color: white;}
 
 
 .footer{
-    background: rgb(44,212,217);
-    background: radial-gradient(circle, rgba(44,212,217,1) 0%, rgba(83,51,237,1) 91%, rgba(83,51,237,1) 100%);
+    background: radial-gradient(circle, rgb(44,212,217) 0%, rgba(83,51,237,1) 91%, rgba(83,51,237,1) 100%);
     grid-area: footer;
     flex-direction: column;
     display: flex;
